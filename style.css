@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top left, #7c4dff33, transparent 60%),
+              radial-gradient(circle at bottom right, #ff336633, transparent 60%),
+              #0a0b10;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  text-shadow: 0 0 15px #7c4dff, 0 0 30px #00e5ff, 0 0 45px #ff3366;
+}
+
+.choices {
+  display: flex;
+  gap: 35px;
+  margin-bottom: 25px;
+}
+
+.choice {
+  padding: 20px 60px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  background: #111;
+  color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+
+.rock {
+  border-radius: 5px;
+  border: 3px solid #ff3333;
+  background: linear-gradient(145deg, #330000, #660000);
+  box-shadow: 0 0 15px #ff3333, 0 0 40px #ff0000;
+  color: #fff;
+}
+.rock:hover {
+  transform: scale(1.2);
+  background: linear-gradient(145deg, #660000, #990000);
+  box-shadow: 0 0 25px #ff4444, 0 0 60px #ff1111;
+}
+
+.paper {
+  border-radius: 5px;
+  border: 3px solid #33ff33;
+  background: linear-gradient(145deg, #003300, #006600);
+  box-shadow: 0 0 15px #33ff33, 0 0 40px #00ff00;
+  color: #fff;
+}
+.paper:hover {
+  transform: scale(1.2);
+  background: linear-gradient(145deg, #006600, #009900);
+  box-shadow: 0 0 25px #44ff44, 0 0 60px #11ff11;
+}
+
+.scissors {
+  border-radius: 5px;
+  border: 3px solid #3399ff;
+  background: linear-gradient(145deg, #001a33, #003366);
+  box-shadow: 0 0 15px #3399ff, 0 0 40px #0066ff;
+  color: #fff;
+}
+.scissors:hover {
+  transform: scale(1.2);
+  background: linear-gradient(145deg, #003366, #004c99);
+  box-shadow: 0 0 25px #44aaff, 0 0 60px #1188ff;
+}
+
+#result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px 25px;
+  border-radius: 12px;
+  background: #1a1a27;
+  box-shadow: inset 0 0 20px rgba(255,255,255,.1),
+              0 0 20px rgba(124,77,255,.4);
+}
